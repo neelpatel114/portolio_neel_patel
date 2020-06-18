@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Style the body */
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+#Edu{
+    height: 500px;
+}
+#Exp{
+    height:550px;
+    width:700px;
+}
+#side {
+    height: 600px;
+    width: auto;
+
+}
+/* Header/logo Title */
+.header {
+
+  padding: 30px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  background: white;
+  color: black;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 70px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #a4b0aa;
+  text-decoration-color: white;
+  color: white;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {   
+
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+
+
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: white;
+    padding: 15px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+litwo {
+    color: white;
+    line-height:15x;
+}
+li{
+  line-height: 30px;
+}
+
+ul.li_two{
+   font-size: 15px;
+   line-height: 5coinpx;
+}
+space{
+    line-height:30px;
+    color: white;
+}
+h5{
+
+    margin:4px;
+}
+
+job {
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;ont-size: 70px;
+    color: #65747B;
+    display: inline;
+}
+
+skill {
+    font-size: 17px;
+    color: black;
+    line-height: -5px;
+    font-weight: bold;
+}
+
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.highlight{
+  color: rgb(63, 184, 63);
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+
+
+#wholepage{
+    width:900px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
